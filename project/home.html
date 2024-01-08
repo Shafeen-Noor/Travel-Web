@@ -1,0 +1,1790 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envato home</title>
+  <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap-4.0.0-dist/js/bootstrap.js">
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #f4f5f9;
+
+    }
+
+    .nav-link {
+      font-size: 15px;
+    }
+
+    .nav-item {
+      margin-left: 10px;
+    }
+
+    p {
+      margin-top: 2%;
+      font-size: 17px;
+      color: rgb(82, 81, 81);
+    }
+
+    ::placeholder {
+      font-size: 16px;
+      color: gray;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    section {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 140px 0;
+
+    }
+
+    .card {
+      position: relative;
+      min-width: 300px;
+      height: auto;
+      overflow: hidden;
+      border-radius: 15px;
+      margin: 0 auto;
+      padding: 40px 5px 0px;
+      transition: .1s;
+      margin-bottom: 5%;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(-45deg, #ffffff, #ffffff);
+    }
+
+    .card_red,
+    .card_red .title .fa {
+      background: linear-gradient(-45deg, #ffffff, #f4f5f9);
+    }
+
+    .card:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      background: rgba(255, 255, 255, .1);
+      z-index: 1;
+      transform: skewY(-5deg) scale(1.5);
+    }
+
+    .link1 {
+      text-decoration: none;
+      font-size: large;
+
+    }
+
+
+    .box {
+      overflow: hidden;
+      height: 250px;
+      padding-top: 40%;
+
+
+    }
+
+    .imgcard {
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0.3, 0.3);
+
+    }
+
+    .card:hover .box {
+      padding-top: 37%;
+      overflow: visible;
+    }
+
+    .overlay1 {
+      height: 100%;
+      width: 95%;
+      border-radius: 5%;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      opacity: 1;
+      z-index: 9;
+    }
+
+    .overlay2 {
+      height: 100%;
+      width: 100%;
+      border: 2px dashed green;
+      border-radius: 5%;
+      position: relative;
+      margin: 2%;
+      opacity: 0.8;
+    }
+
+    .minbox {
+      height: auto;
+      width: 90%;
+      margin: 2%;
+      display: inline-block;
+      opacity: 100%;
+
+    }
+
+    .box1 {
+      width: 45%;
+      height: auto;
+      position: relative;
+    }
+
+    .box2 {
+      width: 45%;
+      height: 400px;
+      position: relative;
+    }
+
+    .card-img-top {
+      max-height: 100px;
+      max-width: 100%;
+    }
+
+    .link2 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+
+    }
+
+    .link3 {
+      text-decoration: none;
+      color: rgb(97, 96, 96);
+      font-size: 12px;
+
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    .hover-text {
+      visibility: hidden;
+    }
+
+    .div1:hover .hover-text {
+      visibility: visible;
+    }
+
+    .div2:hover .hover-text {
+      visibility: visible;
+    }
+
+    .div3:hover .hover-text {
+      visibility: visible;
+    }
+
+    .div4:hover .hover-text {
+      visibility: visible;
+    }
+
+    .notes {
+
+
+      border: 1px solid rgb(156, 154, 154);
+      border-radius: 6%;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      padding: 5%;
+      font-size: small;
+      text-align: center;
+      position: relative;
+    }
+
+    table {
+      width: 90%;
+
+      text-align: center;
+    }
+
+    td {
+      width: 10%;
+      text-align: center;
+
+    }
+
+    .tbtn {
+      width: 80%;
+      height: 100%;
+      margin-bottom: 15%;
+    }
+
+    .card {
+      position: relative;
+    }
+
+    ul {
+      list-style: none;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .end {
+      text-decoration: none;
+      color: ghostwhite;
+      font-size: 16;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+  <div class="container-fluid  navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="margin-bottom: 1px; padding-bottom: 1px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./logo.jpg" alt="nooooooooo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left:50%;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Start Selling</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Our Product
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">sign in</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Web Themes & Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Audio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Graphics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">3D files</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group"
+    style="background-color:white;width: 100%;">
+    <div style="margin-top: 6px; margin-bottom: 6px; ">
+      <label class="btn btn-light" for="btncheck1" style="padding: 5px; font-size:small;">All Items</label>
+      <label class="btn btn-light" for="btncheck2" style="padding: 5px; font-size:small;">Word Press</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">Elementor</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">Hosting</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">HTML</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">Shopify</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">Jamstack</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">Marketing</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">CMS</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">eCommerce</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">UI Templates</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">Plugins</label>
+      <label class="btn btn-light" for="btncheck3" style="padding: 5px; font-size:small;">More</label>
+    </div>
+  </div>
+  <div style="margin:5%;">
+    <div style="margin: 30px;width:40%;display: inline-block;">
+      <h1>Professional WordPress Themes & Website Templates for any project</h1>
+      <p>Discover thousands of easy to customize themes, templates & CMS products, made by world-class developers.</p>
+      <br><br>
+      <nav class="navbar navbar-light ">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="e.g. responsive Wordpress" aria-label="Search"
+            style="width:500px; height: 45px;">
+          <button class="btn btn-outline-success col-2" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
+
+    <img src="./ing1.jpg" class="img-fluid" alt=""
+      style="float:right; max-height:300px; width: auto ;position:relative;"><br>
+
+  </div>
+
+  <section>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-sm-4">
+            <div class="card card_red text-center">
+              <h1>Word Press Themes</h1>
+              <p>Order Thousands of themes</p>
+              <a class="link1" href="">newest</a>
+              <a class="link1" href="">best seller</a>
+              <br><br><br>
+              <div class="box">
+                <img class="image-fluid imgcard" src="./card.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card card_red text-center">
+              <h1>eCommerce Templates</h1>
+              <p>Beautiful website templates</p>
+              <a class="link1" href="">newest</a>
+              <a class="link1" href="">best seller</a>
+              <br><br><br>
+              <div class="box">
+                <img class="image-fluid imgcard" src="./card.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card card_red text-center">
+              <h1>Site Templates</h1>
+              <p>HTML and website templates</p>
+              <a class="link1" href="">newest</a>
+              <a class="link1" href="">best seller</a>
+              <br><br><br>
+              <div class="box">
+                <img class="image-fluid imgcard" src="./card.jpg">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-sm-4">
+            <div class="card card_red text-center">
+              <h1>Blogging</h1>
+              <p>Blogger Templates and themes themes</p>
+              <a class="link1" href="">newest</a>
+              <a class="link1" href="">best seller</a>
+              <br><br><br>
+              <div class="box">
+                <img class="image-fluid imgcard" src="./card.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card card_red text-center">
+              <h1>Marketing Templates</h1>
+              <p>Email,newsletter and landing page templates</p>
+              <a class="link1" href="">newest</a>
+              <a class="link1" href="">best seller</a>
+              <br><br><br>
+              <div class="box">
+                <img class="image-fluid imgcard" src="./card.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card card_red text-center">
+              <h1>CMS Templates</h1>
+              <p>Over 1,700 CMS templates</p>
+              <a class="link1" href="">newest</a>
+              <a class="link1" href="">best seller</a>
+              <br><br><br>
+              <div class="box">
+                <img class="image-fluid imgcard" src="./card.jpg">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="col text-center">
+    <button type="button" class="btn btn-success btn-lg">View all categories</button>
+  </div><br><br>
+  <div class="row">
+    <div class="container-fluid float-left box2">
+      <div class="overlay1">
+        <div class="row">
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay2"></div>
+    </div>
+    <div class="continer-fluid col-sm-4 float-end" style="padding-top: 10%;">
+      <h1>Unique themes and templates for every budget and every project.</h1>
+      <button type="button" class="btn btn-success btn-lg">View all categories</button>
+    </div>
+  </div>
+  <section>
+    <div class="row">
+      <div class=" col-3 box1">
+        <div class="overlay1" style="padding:25% 20% 25% 20% ;">
+          <h1>Featured Themes</h1>
+          <p>Every week, our staff personally hand-pick some of the best new website themes from our collection.</p>
+          <br>
+          <button type="button" class="btn btn-success btn-lg col-">View all Featured themes</button>
+        </div><br>
+        <div class="overlay2 "></div>
+      </div>
+
+      <div class="col-5 box1" style=" margin-left:5%;">
+        <div class="row">
+          <div class="card " style="width: 18rem;">
+            <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button> </p>
+
+              <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button> </p>
+
+              <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button> </p>
+
+              <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button> </p>
+
+              <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="row">
+    <div class="container-fluid float-left box2">
+      <div class="overlay1">
+        <div class="row">
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+          <div class="col div1"><img src="./minbox.jpg" class="minbox">
+            <div class="hover-text">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay2"></div>
+    </div>
+
+
+
+    <div class="continer-fluid col-sm-6" style="padding-top: 10%;">
+      <h1>We're the largest theme marketplace in the world</h1>
+      <br><br>
+      <div class="row m-6 ">
+        <div class="col-4">
+          <div class="notes square">
+            <p>
+              <img style="border-radius:50%; width:30%;" class="ing-fluid" src="./card.jpg" alt=""><br>
+              Home of most popular themes in the world
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="notes square">
+            <p>
+              <img style="border-radius:50%; width:30%;" class="ing-fluid" src="./card.jpg" alt=""><br>
+              clear documentation and theme support available
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="notes square">
+            <p>
+              <img style="border-radius:50%; width:30%;" class="ing-fluid" src="./card.jpg" alt=""><br>
+              quality reviewed creators and items
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section>
+      <h1 style="text-align: center;"> Check out our newest themes and templates</h1>
+      <p style="text-align: center;">We carefully review new entries from our community one by one to make sure they
+        meet high-quality design and functionality standards. From multipurpose themes to niche templates, you’ll always
+        find something that catches your eye</p>
+
+      <div style="text-align: center; margin-left: 7%;">
+        <table>
+          <tbody>
+            <tr>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">All categories</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Site Templates</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Word Press</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">CMS themes</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">eCommerce</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Blogging</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Marketing</button></td>
+
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Forums</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Muse templates</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Jamstack</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Courses</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Template kits</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Ui Templates</button></td>
+              <td><button type="button" class="btn btn-outline-success btn-lg tbtn">Success</button></td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"><button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+      <div class="row">
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card p-0" style="width: 18rem;">
+
+            <body>
+              <div id="carouselExampleControls8 " class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img5.jpg" class="d-block w-100 " alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                    class="link3">technology</a></p>
+                <p class="link2">$95</p>
+
+                <p class="link3"> <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button> </p>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+              </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="col text-center">
+        <button type="button" class="btn btn-success btn-lg">View all categories</button>
+      </div><br><br>
+    </section>
+
+    <div class="container" style="background-color:ghostwhite;">
+
+      <h1 style="margin:2%">Featured Creator</h1>
+      <div class="row">
+        <div class="col ml-5">
+          <img style="border-radius:50%; width:45px;" class="ing-fluid" src="./card.jpg" alt="">
+        </div>
+        <div class="col">
+          <h2>Css Ninja studio</h2>
+          <h3 class="link3"> member since 2001</h3>
+          <br><br>
+          <div class="col text-center">
+            <button type="button" class="btn btn-success btn-lg float-md-start">View Portfolio</button>
+          </div><br><br>
+        </div>
+
+        <div class="col-8">
+          <p>Our themes and templates are produced by world-class creators (or Authors, as we call them). Explore the
+            best of the week.</p>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="row">
+        <div class="col">
+          <div class="card p-0" style="width: 30%;">
+
+            <img style="height:200px ;" src="./img5.jpg" alt="Card image cap">
+
+            <div class="card-body mt-3">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col">
+          <div class="card p-0" style="width: 30%;">
+
+            <img style="height:200px ;" src="./img5.jpg" alt="Card image cap">
+
+            <div class="card-body mt-3">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col">
+          <div class="card p-0" style="width: 30%;">
+
+            <img style="height:200px ;" src="./img5.jpg" alt="Card image cap">
+
+            <div class="card-body mt-3">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <p class="link2">$95</p>
+              <p class="link3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                (7)
+              </p>
+              <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg></button>
+
+                <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <section>
+        <div class="row">
+          <div class=" col-3 box1">
+            <div class="overlay1" style="padding:25% 20% 25% 20% ;">
+              <h1>Browse this week's best selling WordPress themes</h1>
+              <p>This week's best web themes & templates have arrived.</p>
+              <br>
+              <button type="button" class="btn btn-success btn-lg col-">View more best sellers</button>
+            </div><br>
+            <div class="overlay2 "></div>
+          </div>
+
+          <div class="col-5 box1" style=" margin-left:5%;">
+            <div class="row">
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                  <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                      class="link3">technology</a></p>
+                  <p class="link2">$95</p>
+                  <p class="link3">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    (7)
+                  </p>
+                  <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                      </svg></button> </p>
+
+                  <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                  <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                      class="link3">technology</a></p>
+                  <p class="link2">$95</p>
+                  <p class="link3">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    (7)
+                  </p>
+                  <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                      </svg></button> </p>
+
+                  <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                  <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                      class="link3">technology</a></p>
+                  <p class="link2">$95</p>
+                  <p class="link3">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    (7)
+                  </p>
+                  <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                      </svg></button> </p>
+
+                  <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                  <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                      class="link3">technology</a></p>
+                  <p class="link2">$95</p>
+                  <p class="link3">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    (7)
+                  </p>
+                  <p class="link3">173 sales <button type="button" class="btn btn-outline-secondary float-lg-right"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                      </svg></button> </p>
+
+                  <button type="button" class="btn btn-outline-primary float-md-right">Live Preview</button>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    </section>
+    <section style="background-color:white">
+      <div class="row">
+        <div class="col-1" style="width:25%;padding:5%;display: inline-block;">
+          <h1>Unlimited downloads</h1>
+          <p>Enjoy millions of web templates, plugins, videos & more with Envato Elements. From $16.50/month.</p>
+          <br>
+          <img src="./logo2.png" style="width:100%;height:auto" alt="">
+          <br><br>
+          <button type="button" class="btn btn-success btn-lg col-8">Go to Envato Elements</button>
+        </div>
+        <div class="col-1" style="width:40%;padding:5%;display: inline-block;">
+          <table style="display: inline-block;">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                      <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                          class="link3">technology</a></p>
+
+
+                      <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+
+                    </div>
+                </td>
+                <td>
+                  <div class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                      <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                          class="link3">technology</a></p>
+
+
+                      <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+
+                    </div>
+                </td>
+                <td>
+                  <div class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                      <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                          class="link3">technology</a></p>
+
+
+                      <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                      <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                          class="link3">technology</a></p>
+
+
+                      <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+
+                    </div>
+                </td>
+                <td>
+                  <div class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                      <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                          class="link3">technology</a></p>
+
+
+                      <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+
+                    </div>
+                </td>
+                <td>
+                  <div class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="./card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+                      <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                          class="link3">technology</a></p>
+
+
+                      <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    <section>
+      <h1 style="text-align: center;">Grab September's free items</h1>
+      <p style="text-align: center;"> There are always new freebies ready for you to enjoy on Envato Market. Website
+        templates here on ThemeForest, WordPress plugins, graphic assets of all sorts, thousands of background music
+        tracks and more. Get them while you can!</p>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card p-0" style="width: 18rem;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:150px;">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card p-0" style="width: 18rem;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:150px;">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card p-0" style="width: 18rem;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:150px;">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card p-0" style="width: 18rem;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:150px;">
+            <div class="card-body">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card p-0" style="width: 40rem;;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:250px;">
+            <div class="card-body" style="margin-top: 10%; margin-bottom: 5%;">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="card p-0" style="width: 40rem;;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:250px;">
+            <div class="card-body" style="margin-top: 10%; margin-bottom: 5%;">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href=""
+                  class="link3">technology</a></p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card p-0" style="width: 40rem;;">
+            <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:250px;">
+            <div class="card-body" style="margin-top: 10%; margin-bottom: 5%;">
+              <a href="" class="link2"> Vulk - Multipurpose Vue 3 Sass L...</a>
+              <p class="link3">One low cost subscription. Cancel any time</p>
+              <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+  </div>
+  </section>
+
+  <section style="background-color: grey;">
+    <div class="row" style="justify-content:center;text-align:center">
+
+      <div class="col-sm-3">
+        <div class="card p-0" style="width: 18rem;">
+          <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:200px;">
+          <div class="card-body">
+            <a href="" class="link2"> Miilions of Creative assests, unlimited downloads</a>
+            <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href="" class="link3">technology</a>
+            </p>
+            <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card p-0" style="width: 18rem;">
+          <img class="img-fluid" src="./card.jpg" alt="Card image cap" style="max-height:200px;">
+          <div class="card-body">
+            <a href="" class="link2"> Miilions of Creative assests, unlimited downloads</a>
+            <p class="link3"> by <a href="" class="link3">css ninja studie</a>in<a href="" class="link3">technology</a>
+            </p>
+            <button type="button" class="btn btn-outline-danger float-md-right">View</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section style="background-color:black">
+    <div class="row">
+      <div class="col-2">
+        <h2>Envato Market</h2>
+        <ul>
+          <li><a href="" class="end">Terms</a> </li>
+          <li><a href="" class="end">Lincenses</a> </li>
+          <li><a href="" class="end">Market API</a> </li>
+          <li><a href="" class="end">Become an affiliate</a> </li>
+
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h2>Help</h2>
+        <ul>
+          <li><a href="" class="end">Help Center</a> </li>
+          <li><a href="" class="end">Authors</a> </li>
+
+        </ul>
+      </div>
+      <div class="col-2">
+        <h2>Our Community</h2>
+        <ul>
+          <li><a href="" class="end">Community</a> </li>
+          <li><a href="" class="end">Blog</a> </li>
+          <li><a href="" class="end">Forums</a> </li>
+          <li><a href="" class="end">Meetups</a> </li>
+
+        </ul>
+      </div>
+      <div class="col-2">
+        <h2>Meet Envato</h2>
+        <ul>
+          <li><a href="" class="end">About Envato</a> </li>
+          <li><a href="" class="end">Careers</a> </li>
+          <li><a href="" class="end">Privacy Policy</a> </li>
+          <li><a href="" class="end">Sitemap</a> </li>
+
+        </ul>
+      </div>
+      <div class="col-3">
+        <img src="./logo.jpg" class="img-fluid rounded-top" alt="">
+        <div class="row">
+          <div class="col-3">
+            <h2 class="end">70,438,903</h2>
+            <p>items sold</p>
+          </div>
+          <div class="col-3">
+            <h2 class="end">$1,049,547,650
+
+            </h2>
+            <p>community earnings</p>
+          </div>
+      
+        </div>
+
+      </div>
+      <div class="col-1">
+        <img src="./certif.png" alt="">
+      </div>
+    </div>
+    <hr style="color: white;">
+    <div class="row">
+      <div class="col-1"><a class="end" href="">Envato.com</a></div>
+       <div class="col-1"><a class="end" href="">Placiet by Envato</a></div>
+       <div class="col-1"><a class="end" href="">Envato tuts+</a></div>
+       <div class="col-1"><a class="end" href="">All Products</a></div>
+       <div class="col-1"><a class="end" href="">Sitemap</a></div>
+
+
+    </div>
+    <p class="link3">Price is in US dollars and excludes tax</p>
+    <p class="link3">© 2022 Envato Pty Ltd. Trademarks and brands are the property of their respective own</p>
+  </section>
+  
+</body>
+
+</html>
